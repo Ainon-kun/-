@@ -1,0 +1,732 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../img/header__bg.jpg);
+    height: 302px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Навбар начало */
+
+.header_nav {
+    padding: 10px 0;
+}
+
+.header_top {
+    background-color: #485052;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* burger */
+
+.burger {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    margin-right: 15px;
+}
+
+.burger-1,
+.burger-2,
+.burger-3 {
+    width: 30px;
+    height: 5px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    background-color: #485052;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* end of burger */
+
+.nav_menu {
+    display: flex;
+    margin: 10px 0;
+}
+
+.nav_list {
+    margin-left: 88px;
+}
+
+.nav_link::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #7c8688;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: -50px;
+}
+
+.nav_list i {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.nav_list:first-child {
+    margin-left: 36px;
+}
+
+.nav_list:last-child {
+    margin-right: 22px;
+}
+
+.nav_link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+.header_bottom {
+    background-color: #fff;
+    border-radius: 0 0 3px 3px;
+    border: none;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.nav_list_bottom {
+    margin-left: 50px;
+    position: relative;
+}
+
+.nav_list_bottom::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #e7784b;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    right: -30%;
+}
+
+.nav_list_bottom:last-child::after {
+    display: none;
+}
+
+.nav_link_bottom {
+    color: #778183;
+    text-transform: uppercase;
+}
+
+.nav_list_bottom:first-child {
+    margin-left: 0;
+}
+
+.nav_list_bottom:last-child {
+    margin-right: 20px;
+}
+
+.nav_menu_bottom {
+    display: flex;
+}
+
+.logo {
+    margin: 5px;
+}
+
+.hide__dot::after {
+    display: none;
+}
+
+/* Навбар конец */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main__main {
+    display: flex;
+    padding-top: 27px;
+    padding-bottom: 97px;
+}
+
+/* Левая боди начало */
+
+.main__left {
+    padding-left: 10px;
+}
+
+/* ПОИСК начало */
+
+.top__search {
+    padding: 7px 16px 7px 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #6fc191;
+    border-radius: 3px 3px 0 0;
+}
+
+.search__title {
+    font-size: 19px;
+    color: #fff;
+}
+
+.form {
+    background-color: #f9f9f9;
+    border: none;
+    border-bottom: 3px solid #bfbfbf;
+    border-radius: 0 0 3px 3px;
+}
+
+.form__search {
+    margin: 28px 39px 18px 18px;
+    width: 323px;
+    height: 40px;
+    padding-left: 21px;
+    border: none;
+    border-bottom: 3px solid #bbbbbb;
+    border-radius: 0 0 3px 3px;
+}
+
+.button {
+    border: none;
+    background-color: #6fc191;
+    color: #fff;
+    margin-left: 18px;
+    margin-bottom: 24px;
+    padding: 14px 24px;
+    border-radius: 5%;
+    cursor: pointer;
+    border-bottom: 2px solid #58a072;
+}
+
+/* ПОИСК конец */
+
+/* СМС начало */
+
+.last__messages {
+    margin-top: 15px;
+}
+
+.top__messages {
+    position: relative;
+    display: flex;
+    background-color: #c289ce;
+    padding: 15px 96px 15px 32px;
+    border-radius: 3px 3px 0 0;
+}
+
+.messages__title {
+    font-size: 19px;
+    color: #fff;
+    display: flex;
+    font-weight: 500;
+}
+
+.list__logo {
+    position: absolute;
+    right: 18px;
+    top: 20%;
+}
+
+.list__messages {
+    background-color: #f9f9f9;
+    padding-bottom: 21px;
+    border-bottom: 3px solid #bbbbbb;
+    border-radius: 0 0 3px 3px;
+}
+
+.note {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 19px;
+    padding-right: 19px;
+    position: relative;
+    padding-bottom: 11px;
+}
+
+.cube {
+    background-color: #485052;
+    height: 50px;
+    min-width: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.cube__day {
+    font-size: 25px;
+    font-weight: bold;
+    height: 65%;
+}
+
+.cube__month {
+    font-size: 13px;
+    background-color: #c289ce;
+    height: 35%;
+    border-radius: 0 0 3px 3px;
+}
+
+.note__text {
+    font-size: 13px;
+    color: #485052;
+    width: 260px;
+    margin-left: 15px;
+}
+
+.note__text__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+}
+
+.messages__line::after {
+    content: '';
+    width: 325px;
+    height: 1px;
+    background-color: #bfbfbf;
+    display: inline-block;
+    position: absolute;
+    top: 99%;
+    left: 20px;
+}
+
+/* СМС конец */
+
+/* Левая боди конец */
+
+/* Правая боди начало */
+
+.main__right {
+    margin-left: 39px;
+}
+
+.main__title {
+    font-weight: normal;
+    color: #485052;
+    font-size: 32px;
+}
+
+.main__title::after {
+    content: '';
+    width: 31px;
+    height: 3px;
+    background-color: #ed7749;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.main__text {
+    color: #485052;
+    font-size: 15px;
+    margin-bottom: 22px;
+    text-align: justify;
+}
+
+.main__text__right {
+    display: block;
+    margin-top: 11px;
+    width: 92%;
+    padding: 30px 29px 40px 29px;
+    background-color: #f9f9f9;
+    border-bottom: 3px solid #bbbbbb;
+    border-radius: 3px 3px 3px 3px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+}
+
+.main__text:last-child {
+    margin-bottom: 0px;
+}
+
+.main__checks .main__text {
+    margin-bottom: 0px;
+}
+
+.check {
+    display: block;
+    color: #6fc191;
+    margin-top: 9px;
+}
+
+.text__check {
+    color: #485052;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: 'Open Sans';
+}
+
+/* Правая боди конец */
+
+/* ФУТЕР начало */
+
+.main__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top {
+    padding-top: 50px;
+    padding-bottom: 3px;
+    background-color: #485052;
+    color: #fff;
+}
+
+.left__side {
+    display: flex;
+}
+
+/* Блок О НАС начало */
+.about {
+    margin-right: 60px;
+}
+
+.footer__title {
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__text {
+    font-size: 13px;
+    width: 284px;
+}
+
+.about__text::before {
+    content: '';
+    width: 31px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 20px;
+}
+
+.about__text::after {
+    content: '';
+    width: 31px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 28px;
+}
+
+.footer__top__sign {
+    font-size: 22px;
+    color: #6fc191;
+    align-items: baseline;
+    margin-right: 54px;
+    position: relative;
+}
+
+.footer__top__sign::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #272b2c;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: -32px;
+}
+
+.footer__top__sign:last-child::after {
+    display: none;
+}
+/* Блок О НАС конец */
+
+/* Блок НАША ГАЛЕРЕЯ начало */
+.collage::before {
+    content: '';
+    width: 31px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 20px;
+}
+
+.collage::after {
+    content: '';
+    width: 31px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 28px;
+}
+/* Блок НАША ГАЛЕРЕЯ конец */
+
+/* Блок КОНТАКТ начало */
+.input__email {
+    display: block;
+    background-color: #404548;
+    color: #fff;
+    padding: 15px 0 15px 20px;
+    border: none;
+    border-bottom: 3px solid #363c3d;
+    border-radius: 3px 3px 3px 3px;
+    margin-bottom: 19px;
+    width: 320px;
+}
+
+.input__email::placeholder {
+    color: #fff;
+}
+
+.message {
+    display: block;
+    width: 320px;
+    background-color: #404548;
+    color: #fff;
+    padding: 15px 0 43px 20px;
+    border: none;
+    border-bottom: 3px solid #363c3d;
+    border-radius: 3px 3px 3px 3px;
+    margin-bottom: 19px;
+}
+
+.message::placeholder {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.down__button {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.contact__form::before {
+    content: '';
+    width: 31px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 20px;
+}
+
+.contact__form::after {
+    content: '';
+    width: 31px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 28px;
+}
+/* Блок КОНТАКТ конец */
+
+.footer {
+    background-color: #1b1e1f;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    font-size: 15px;
+}
+
+.footer__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_list_bottom {
+    margin-left: 30px;
+    position: relative;
+    padding-top: 16px;
+}
+
+.footer_list_bottom::after {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: #5a6264;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    right: -25%;
+}
+
+.footer_list_bottom:last-child::after {
+    display: none;
+}
+
+.footer_link_bottom {
+    color: #5a6264;
+    text-transform: capitalize;
+}
+
+.footer_list_bottom:first-child {
+    margin-left: 0;
+}
+
+.footer_menu_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_menu_bottom__right {
+    color: #6a7375;
+}
+.signs__down {
+    font-size: 25px;
+    padding-left: 50%;
+}
+
+.link {
+    text-transform: lowercase;
+}
+/* ФУТЕР конец */
+
+/* media */
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+    .main__text__right {
+        margin-left: 50px;
+    }
+    .main__text__right {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+    .header {
+        height: 250px;
+    }
+    .header_top{
+        font-size: 12px;
+    }
+    .nav {
+        font-size: 12px;
+    }
+    .main__text__right {
+        margin-left: 40px;
+    }
+    .main__left {
+        width: 40%;
+    }
+    .search__title {
+        font-size: 15px;
+    }
+    .messages__title {
+        font-size: 15px;
+    }
+    .list__logo {
+        position: absolute;
+        right: 18px;
+        top: 15%;
+    }
+    .main__bottom {
+        justify-content: unset;
+    }
+    .about {
+        margin-right: 30px;
+    }
+    .gallery {
+        margin-right: 30px;
+    }
+    .input__email {
+        width: 300px;
+    }
+    .message {
+        width: 300px;
+    }
+    .footer_list_bottom::after {
+        content: '';
+        top: 54%;
+        right: -24%;
+    }
+    .signs__down {
+        font-size: 20px;
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    .footer_menu_bottom__right {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 970px) {
+    .container {
+        max-width: 767px;
+    }
+    .nav_list {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+    .nav_list_bottom {
+        display: none;
+    }
+    .form__search {
+        width: 240px;
+    }
+    .messages__line::after {
+        content: '';
+        width: 240px;
+    }
+    .main__bottom {
+        flex-wrap: wrap;
+    }
+    .left__side {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .contact {
+        margin: 0 auto;
+    }
+    .footer_menu_bottom {
+        display: none;
+    }
+    .footer_menu_bottom__right {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 750px;
+    }
+    .form__search {
+        width: 200px;
+    }
+}
